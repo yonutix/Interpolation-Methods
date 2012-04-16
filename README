@@ -1,0 +1,27 @@
+===============================================================
+Mihai Ionut Cosmin 312CC || OS :Windows 7 || IDE:MATLAB || Timp: aprox.70 h ||
+===============================================================
+
+	Am preferat sa las codul mai intins ca sa fie inteligibil.
+	
+===================
+3.1 Ealuare Continua
+===================
+	In interiorul fisierului eval_interpolator_c.m am pus functiile pentru interpolari (Lagrange, Newton, Spline liniar, Spline natural, Spline tensionat,interpolare trigonometrica),functia f data in enunt si functia dif pentru functia Newton. 
+	Am calculat eroarea pentru Nk incepand de la 4  si dublandu-se la fiecare pas.Ca sa convearga trebuia ca eroarea sa scada pentru un numar din ce in ce mai mare de puncte de interpolare astfel spre infinit eroarea trebuia sa tinda la 0.Metodele Lagrange si Newton sunt instabile si nu converg, spline-ul liniar converge cel mai tarziu,spline-urile naturale si cubice converg mai devreme decat cel liniar,dar cel mai repede converge polinomul trigonometric.
+
+=================
+3.2 Evaluare Discreta
+=================
+
+	Spre deosebide de cazul continuu, in cazul discret nu se putea calcula intotdeauna functia in 2^k puncte echidistante.Cum prin aproximare nu se puteau calcula valorile functiei in puncte intermediare pentru ca ar fi insemnat interpolare sau aproximare si nu s-ar fi putut cacula eroarea.Am ales puncte echidistante ,divizori ai lui 300 , am inceput de la 4 puncte si in loc sa dublez numarul punctelor in care calculam polinomul de interpolare treceam la urmatorul divizor.In cazul discret polinomul trigonometric nu a iesit.
+
+======================
+3.3 Evaluarea temei de casa
+======================
+	Am atribuit unei mattrici valorile cerute.
+
+====================
+3.4 Reprezentarea grafica
+====================
+	Am folosit plot ,subplot si hold on ca sa reprezint grafic functiile cerute.
